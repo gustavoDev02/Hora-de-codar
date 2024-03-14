@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 4</title>
+
+    <script>
+        var escolha = parseInt(prompt("DIgite a forma que deseja calcular, 1-Retangulo, 2-Quadrado, 3-Losango, 4-Paralelogramo, 5-Trapezio"))
+        
+        
+        switch(escolha){
+            case 1:
+                var base = parseInt(prompt("Digite a base do retangulo: "));
+                var altura = parseInt(prompt("Digite o lado do retangulo: ")); 
+                var area = base * altura;
+
+                alert(`a area do retangulo é de: ${area}`);
+                break;
+            case 2:
+                var lado = parseInt(prompt("Digite o lado do quadrado: "));
+                var areaQuadrado = lado * lado;
+
+                alert(`A area do quadrado é de: ${areaQuadrado}`);
+                break;
+            case 3 : 
+                var diagonalMaior = parseFloat(prompt("Digite a diagonal maior do Losango: "));
+                var diagonalMenor = parseFloat(prompt("Digite a diagonal menor do Losango: "));
+                var areaLosango = (diagonalMaior * diagonalMenor) / 2 
+
+                alert(`A area do Losango é de: ${areaLosango}`);
+                break;
+            case 4 : 
+                var base = parseInt(prompt("Digite a base do Paralelogramo: "));
+                var altura = parseInt(prompt("Digite a altura "))
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
